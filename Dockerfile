@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:10
 RUN apt-get update && apt-get install -y wget gcc make vim-tiny less g++ subversion
 RUN wget 'ftp://gnu.mirror.iweb.com/apl/apl-1.8.tar.gz' && tar -xaf apl-1.8.tar.gz
 WORKDIR apl-1.8
